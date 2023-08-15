@@ -8,19 +8,12 @@
  */
 int main(void)
 {
-	int i;
+	char letter;
 
-	for (i = 97; i < 102; i++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(i);
-	}
-	for (i = 102; i < 113; i++)
-	{
-		putchar(i);
-	}
-	for (i = 114; i < 123; i++)
-	{
-		putchar(i);
+		if (letter != 'e' && letter != 'q')
+			putchar(letter);
 	}
 	putchar('\n');
 	return (0);
