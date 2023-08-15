@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -9,7 +8,7 @@
 int main(void)
 {
 	char tab[] = "_putchar";
-	[[un]signed] int i;
+	long unsigned int i;
 
 	for (i = 0; i < sizeof(tab); i++)
 	{
