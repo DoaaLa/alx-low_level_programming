@@ -21,9 +21,10 @@ char *str_concat(char *s1, char *s2)
 		;
 	for (j = 0; s2[j] != '\0'; j++)
 		;
-	cc = (char *)malloc(sizeof(char) * (i + j));
+	cc = (char *)malloc(sizeof(char) * (i + j + 1));
 	if (cc == NULL)
 		return (NULL);
+	i = j = 0;
 	while (s1[i] != '\0')
 	{
 		cc[i] = s1[i];
