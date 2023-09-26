@@ -17,12 +17,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	else
-	{
-		tmp->n = n;
-		tmp->next = head;
-		*head = tmp;
-	}
+	tmp->n = n;
+	tmp->next = head;
+	*head = tmp;
+
 	return (tmp);
 }
 
